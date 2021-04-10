@@ -2,7 +2,7 @@
     "name": "themodulefactory/manage-text-string",
     "description": "A small package built for a private project to manage text read from a file as an object.",
     "type": "library",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "license": "GPL-3.0-or-later",
     "authors": [
         {
