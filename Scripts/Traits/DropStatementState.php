@@ -11,10 +11,19 @@ trait traitDropStatementState {
 
     /**
      * traitDropStatementState constructor.
+     * @param bool $boolState
      */
-    public function __construct()
+    public function __construct(bool $boolState = false)
     {
-        $this->dropStatementState = false;
+        $this->dropStatementState = $boolState;
+    }
+
+    /**
+     * @param bool $dropStatementState
+     */
+    public function setDropStatementState(bool $dropStatementState = false): void
+    {
+        $this->dropStatementState = $dropStatementState;
     }
 
     /**
@@ -26,10 +35,34 @@ trait traitDropStatementState {
     }
 
     /**
-     * @param bool $dropStatementState
+     * @return bool
      */
-    public function setDropStatementState(bool $dropStatementState): void
+    public function flipDropStatementState(): bool {
+        if ($this->dropStatementState) {
+            return $this->dropStatementState = false;
+        } else {
+            return $this->dropStatementState = true;
+        }
+    }
+
+    /**
+     * @param bool $boolState
+     * @return bool
+     */
+    public function setBoolState(bool $boolState): bool
     {
-        $this->dropStatementState = $dropStatementState;
+        return $boolState;
+    }
+
+    /**
+     * @param bool $boolState
+     * @return bool
+     */
+    public function flipBoolState (bool $boolState): bool {
+        if ($boolState) {
+            return $boolState = false;
+        } else {
+            return $boolState = true;
+        }
     }
 }

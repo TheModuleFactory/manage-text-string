@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
 /**
- * Trait traitReadTemplate
+ * Trait traitReadTextFile
  */
-trait traitReadTemplate {
+trait traitReadTextFile {
     /**
      * @param string $srcFile
      * @return string|null
@@ -19,6 +19,6 @@ trait traitReadTemplate {
      */
     public function readFileToArray (string $srcFile): ?array
     {
-        return explode("\n", file_get_contents($srcFile));
+        return explode(PHP_EOL, file_get_contents($srcFile));
     }
 }

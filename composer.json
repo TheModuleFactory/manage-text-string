@@ -2,6 +2,7 @@
     "name": "themodulefactory/manage-text-string",
     "description": "A small package built for a private project to manage text read from a file as an object.",
     "type": "project",
+    "version": "1.0.0",
     "license": "GNU General Public License v3.0",
     "authors": [
         {
@@ -21,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AppScripts\\": "Scripts/"
+            "Package\\": "Scripts/"
         }
     }
 }

@@ -1,17 +1,24 @@
 <?php declare(strict_types=1);
 
-namespace AppScripts\Classes\FileSystem;
+namespace AppScripts\Classes;
 
 /**
  * Class ManageTextString
- * @package AppScripts\Classes\FileSystem
+ * @package Package\Classes
  */
 class ManageTextString
 {
+    use \traitDropStatementState, \traitReadTemplate;
+
     /**
      * @var string
      */
     protected string $textString;
+
+    /**
+     * @var array
+     */
+    protected array $textArray;
 
     /**
      * @param string $textString
@@ -20,6 +27,14 @@ class ManageTextString
     public function setTextString(string $textString): ?string
     {
         return $this->textString = $textString;
+    }
+
+    /**
+     * @return array|null
+     */
+    public function setTextArray(): ?array
+    {
+        return $this->textArray = explode(PHP_EOL, $this->getTextString());
     }
 
     /**
@@ -38,5 +53,12 @@ class ManageTextString
     public function getTextString(): ?string
     {
         return $this->textString;
+    }
+
+    /**
+     * @return array
+     */
+    public function getTextArray(): array {
+        return $this->textArray;
     }
 }
