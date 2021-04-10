@@ -2,7 +2,7 @@
     "name": "themodulefactory/manage-text-string",
     "description": "A small package built for a private project to manage text read from a file as an object.",
     "type": "project",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "GPL-3.0-or-later",
     "authors": [
         {
@@ -10,15 +10,9 @@
             "email": "steve@themodulefactory.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": "^7.4",
-        "ext-json": "^7.4",
-        "ext-PDO": "^7.4",
-        "vlucas/phpdotenv": "5.3.x-dev"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "10.0.x-dev"
+        "ext-json": "^7.4"
     },
     "autoload": {
         "psr-4": {
