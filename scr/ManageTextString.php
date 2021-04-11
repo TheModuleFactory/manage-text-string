@@ -1,4 +1,5 @@
 <?php declare(strict_types=1);
+
 /**
  * @copyright 2021 &copy; Steve R. Lewis, The Module Factory Ltd.
  *
