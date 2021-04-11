@@ -24,7 +24,6 @@
 namespace ManageTextString;
 
 use ManageTextString\TraitReadTextFile;
-use ManageTextString\TraitIncludeFlag;
 
 /**
  * Class ManageTextString
@@ -32,6 +31,7 @@ use ManageTextString\TraitIncludeFlag;
  */
 class ManageTextString
 {
+    use ManageTextString\TraitIncludeFlag;
 
     /**
      * @var string
