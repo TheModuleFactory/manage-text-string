@@ -29,8 +29,7 @@ namespace ManageTextString;
  */
 class ManageTextString
 {
-    use TraitIncludeFlag;
-    use TraitReadTextFile;
+    use \TraitIncludeFlag,\TraitReadTextFile;
 
     /**
      * @var string
