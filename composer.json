@@ -1,8 +1,8 @@
 {
     "name": "themodulefactory/manage-text-string",
-    "description": "A small package built for a private project to manage text read from a file as an object.",
+    "description": "A small package built for a private project to manage text read from a file from which a text object is created.",
     "type": "library",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "license": "GPL-3.0-or-later",
     "authors": [
         {
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Package\\": "Scripts/"
+            "ManageTextString\\": "Scripts/"
         }
     }
 }
