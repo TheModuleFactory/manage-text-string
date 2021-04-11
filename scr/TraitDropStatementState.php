@@ -7,6 +7,8 @@
  * The Module Factory Ltd. Company Number; 09989173
  * https://www.themodulefactory.com
  *
+ * A small package built for a private project to manage text read from a file from which a text object is created.
+ *
  * This program is free software: you can redistribute it and/or modify it under the terms of the
  * GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License,
  * or (at your option) any later version.
@@ -18,50 +20,50 @@
  * See the GNU Affero General Public License Version 3 for more details.
  * You should have received a copy of the GNU Affero General Public License along with this program.
  * If not, see <https://www.gnu.org/licenses/>.
- *
- * @version 1.0.0
- *
- * Trait traitDropStatementState
  */
-trait TraitDropStatementState {
+
+/**
+ * Trait TraitIncludeFlag
+ */
+trait TraitIncludeFlag {
     /**
      * @var bool
      */
-    protected bool $dropStatementState;
+    protected bool $includeFlag;
 
     /**
-     * traitDropStatementState constructor.
+     * TraitIncludeFlag constructor.
      * @param bool $boolState
      */
     public function __construct(bool $boolState = false)
     {
-        $this->dropStatementState = $boolState;
+        $this->includeFlag = $boolState;
     }
 
     /**
-     * @param bool $dropStatementState
+     * @param bool $includeFlag
      */
-    public function setDropStatementState(bool $dropStatementState = false): void
+    public function setIncludeFlag(bool $includeFlag = false): void
     {
-        $this->dropStatementState = $dropStatementState;
+        $this->includeFlag = $includeFlag;
     }
 
     /**
      * @return bool
      */
-    public function isDropStatementState(): bool
+    public function isIncludeFlag(): bool
     {
-        return $this->dropStatementState;
+        return $this->includeFlag;
     }
 
     /**
      * @return bool
      */
-    public function flipDropStatementState(): bool {
-        if ($this->dropStatementState) {
-            return $this->dropStatementState = false;
+    public function flipIncludeFlag(): bool {
+        if ($this->includeFlag) {
+            return $this->includeFlag = false;
         } else {
-            return $this->dropStatementState = true;
+            return $this->includeFlag = true;
         }
     }
 

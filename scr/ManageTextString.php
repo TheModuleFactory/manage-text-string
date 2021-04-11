@@ -1,7 +1,4 @@
 <?php declare(strict_types=1);
-
-namespace ManageTextString;
-
 /**
  * @copyright 2021 &copy; Steve R. Lewis, The Module Factory Ltd.
  *
@@ -22,15 +19,17 @@ namespace ManageTextString;
  * See the GNU Affero General Public License Version 3 for more details.
  * You should have received a copy of the GNU Affero General Public License along with this program.
  * If not, see <https://www.gnu.org/licenses/>.
- *
- * @version 1.0.0
- *
+ */
+
+namespace ManageTextString;
+
+/**
  * Class ManageTextString
- * @package Package\Classes
+ * @package ManageTextString
  */
 class ManageTextString
 {
-    use \TraitDropStatementState, \traitReadTemplate;
+    use \TraitIncludeFlag, \traitReadTemplate;
 
     /**
      * @var string
