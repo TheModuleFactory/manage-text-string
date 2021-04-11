@@ -22,6 +22,8 @@
  * If not, see <https://www.gnu.org/licenses/>.
  */
 
+namespace ManageTextString;
+
 /**
  * Trait TraitIncludeFlag
  */
