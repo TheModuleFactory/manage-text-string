@@ -23,13 +23,15 @@
 
 namespace ManageTextString;
 
+use ManageTextString\TraitReadTextFile;
+use ManageTextString\TraitIncludeFlag;
+
 /**
  * Class ManageTextString
  * @package ManageTextString
  */
 class ManageTextString
 {
-    use \TraitIncludeFlag,\TraitReadTextFile;
 
     /**
      * @var string
