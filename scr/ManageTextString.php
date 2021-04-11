@@ -23,15 +23,15 @@
 
 namespace ManageTextString;
 
-use TraitIncludeFlag;
-use TraitReadTextFile;
-
 /**
  * Class ManageTextString
  * @package ManageTextString
  */
 class ManageTextString
 {
+    use TraitIncludeFlag;
+    use TraitReadTextFile;
+
     /**
      * @var string
      */
