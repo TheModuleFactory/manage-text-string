@@ -2,7 +2,7 @@
     "name": "themodulefactory/manage-text-string",
     "description": "A small package built for a private project to manage text read from a file from which a text object is created.",
     "type": "library",
-    "license": "GPL-3.0-or-later",
+    "license": "MIT",
     "authors": [
         {
             "name": "Steve Lewis",
@@ -17,9 +17,6 @@
         "psr-4": {
             "ManageTextString\\": "scr/"
         }
-    },
-    "config": {
-        "preferred-install": "dist"
     },
     "extra": {
         "branch-alias": {
